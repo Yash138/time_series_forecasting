@@ -1,0 +1,38 @@
+Time Series Forecasting comes under quantitative forecasting.
+
+Time Series Data Components:
+    Level
+    Trend
+    Seasonality
+    Cyclicity
+    Noise
+
+Smoothing Technique:
+    Clearing out random noise and eliminating outliers to see patterns & trends.
+    Helps in studying all the components independently.
+
+Handling NULL values:
+    Mean/Median Imputation
+    Last Observation Carried Formward
+    Next Observation Carried Backward
+    Linear Interpolation
+    Seasonal Linear Interpolation
+
+Outliers:
+    Deteching Outliers
+        Extreme Value analysis
+        Using Boxplot
+        Using Histogram
+    Handling Outliers
+        Replacing the value with Mean, Median or Mode
+        Trimming that record
+        Lower and Higher end-capping
+        Zero Capping
+
+Two Methods to Extract(Decmpose) Components from The Time Series Data
+    Additive Seasonal Component
+    Multiplicative Seasonal Component
+
+Stationary Series
+    A series without a trend or seasonal components.
+    A series whose mean, variance, covarience & standard deviation are not a function of time.
