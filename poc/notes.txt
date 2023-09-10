@@ -7,10 +7,6 @@ Time Series Data Components:
     Cyclicity
     Noise
 
-Smoothing Technique:
-    Clearing out random noise and eliminating outliers to see patterns & trends.
-    Helps in studying all the components independently.
-
 Handling NULL values:
     Mean/Median Imputation
     Last Observation Carried Formward
@@ -30,8 +26,25 @@ Outliers:
         Zero Capping
 
 Two Methods to Extract(Decmpose) Components from The Time Series Data
-    Additive Seasonal Component
-    Multiplicative Seasonal Component
+    Additive Seasonal Component : When Seasonality is not a function of level (difference b/w peak and trough reamin same).
+    Multiplicative Seasonal Component : With the increase in yearly trend the delta of peak and trough is also changing.
+
+Smoothing Technique:
+    Clearing out random noise and eliminating outliers to see patterns & trends.
+    Helps in studying all the components independently.
+    Can be achived using one of the Technique:
+        Naive Method
+        Simple Average Method
+        Simple Moving Average
+        Weighted Moving Average
+            Simple Exponential Smoothing - It captures the Level of a Time Series.
+                forecast for (t+1) is a function of current level component
+            Holt's Exponential Smoothing - It captures both level and trend of a Time Series.
+            
+    To Evaluate the Forecast
+        RMSE - Root Mean Squared Error
+        MAPE - Mean Absolute Percentage Error
+
 
 Stationary Series
     A series without a trend or seasonal components.
